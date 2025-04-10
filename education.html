@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Education & Experience | Kara Walp</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
 </head>
 <body class="bg-white text-gray-800">
   <nav class="bg-blue-900 text-white p-4">
@@ -19,9 +25,11 @@
   <main class="max-w-4xl mx-auto p-6">
     <h1 class="text-3xl font-bold text-blue-700 mb-6">Education & Experience</h1>
 
-    <section class="space-y-6">
-      <!-- Example Entry -->
-      <div class="flex items-start gap-4">
+    <!-- Education Section -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Education</h2>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
         <img src="logos/bu-logo.png" alt="School Logo" class="w-16 h-16 object-contain" />
         <div>
           <h2 class="text-xl font-semibold">Boston University</h2>
@@ -38,9 +46,13 @@
           <p class="mt-1">Brief description of what you studied, achievements, etc.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Another Example Entry -->
-      <div class="flex items-start gap-4">
+    <!-- Experience Section -->
+    <section>
+      <h2 class="text-2xl font-semibold text-gray-700 mb-4">Experience</h2>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
         <img src="logos/cidar-logo.png" alt="Company Logo" class="w-16 h-16 object-contain" />
         <div>
           <h2 class="text-xl font-semibold">CIDAR Lab</h2>
@@ -77,6 +89,7 @@
       </div>
     </section>
   </main>
+
   <footer class="bg-blue-900 text-white text-sm p-4 text-center mt-10">
     <p>© 2025 Kara Walp. All rights reserved.</p>
     <p>Contact: <a href="mailto:20walpk@gmail.com" class="underline">20walpk@gmail.com</a></p>
