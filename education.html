@@ -22,10 +22,102 @@
       <li><a href="projects.html" class="hover:underline">Projects</a></li>
     </ul>
   </nav>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-blue-700 mb-6">Education & Experience</h1>
+
+    <h2 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Education</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('edu1')">
+        <a href="https://www.bu.edu" target="_blank">
+          <img src="images/bu-logo.png" alt="Boston University" class="w-16 h-16 mb-2">
+        </a>
+        <h3 class="font-semibold text-lg">Boston University</h3>
+        <div id="edu1" class="hidden mt-2">
+          <p>Bachelor of Science in Biomedical Engineering with a minor in Electrical Engineering. Coursework includes machine learning, statistics, and computational biology. Graduating 2025.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-semibold text-gray-700 mt-8 mb-4">Experience</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('exp1')">
+        <a href="https://igem.org" target="_blank">
+          <img src="images/igem-logo.png" alt="iGEM" class="w-16 h-16 mb-2">
+        </a>
+        <h3 class="font-semibold text-lg">iGEM Paris 2023</h3>
+        <div id="exp1" class="hidden mt-2">
+          <p>Collaborated on a synthetic biology research project for the international iGEM competition. Worked on microfluidics, automation, and interdisciplinary research presentation.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('exp2')">
+        <a href="https://www.stempathways.org" target="_blank">
+          <img src="images/stempathways-logo.png" alt="STEM Pathways" class="w-16 h-16 mb-2">
+        </a>
+        <h3 class="font-semibold text-lg">STEM Pathways</h3>
+        <div id="exp2" class="hidden mt-2">
+          <p>Worked as a mentor and outreach coordinator for a nonprofit engaging local high school students with hands-on science activities and career guidance in STEM.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('exp3')">
+        <img src="images/ta-logo.png" alt="Teaching Assistant" class="w-16 h-16 mb-2">
+        <h3 class="font-semibold text-lg">Teaching Assistant: Engineering Design</h3>
+        <div id="exp3" class="hidden mt-2">
+          <p>Mentored undergraduates through ideation, prototyping, and fabrication of original engineering design projects. Provided guidance on both technical execution and project management.</p>
+        </div>
+      </div>
+
+      <div class="bg-gray-100 p-4 rounded shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('exp4')">
+        <a href="https://www.bu.edu/eng/research/student-research-opportunities/" target="_blank">
+          <img src="images/bu-logo.png" alt="Boston University" class="w-16 h-16 mb-2">
+        </a>
+        <h3 class="font-semibold text-lg">Student Researcher: BU BME</h3>
+        <div id="exp4" class="hidden mt-2">
+          <p>Led development of an open-source, low-cost dual-syringe pump for continuous microfluidic flow. Validated performance experimentally and with COMSOL simulations; integrated Arduino-based multiplexing for automated workflows. First-author publication in progress.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-blue-900 text-white text-sm p-4 text-center mt-10">
+    <p>© 2025 Kara Walp. All rights reserved.</p>
+    <p>Contact: <a href="mailto:20walpk@gmail.com" class="underline">20walpk@gmail.com</a></p>
+  </footer>
+</body>
+</html>
+
+<!-- education.html -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Education & Experience | Kara Walp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+  <nav class="bg-blue-900 text-white p-4">
+    <ul class="flex gap-6 justify-center">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="about.html" class="hover:underline">About Me</a></li>
+      <li><a href="education.html" class="hover:underline">Education & Experience</a></li>
+      <li><a href="projects.html" class="hover:underline">Projects</a></li>
+    </ul>
+  </nav>
   <main class="max-w-4xl mx-auto p-6">
     <h1 class="text-3xl font-bold text-blue-700 mb-6">Education & Experience</h1>
 
     <!-- Education Section -->
+    <!--
     <section class="mb-10">
       <h2 class="text-2xl font-semibold text-gray-700 mb-4">Education</h2>
       <div class="space-y-6">
@@ -49,6 +141,7 @@
     </section>
 
     <!-- Experience Section -->
+    <!--
     <section>
       <h2 class="text-2xl font-semibold text-gray-700 mb-4">Experience</h2>
       <div class="space-y-6">
