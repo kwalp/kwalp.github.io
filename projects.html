@@ -4,10 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Your Name</title>
+  <title>Projects | Kara Walp</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
 </head>
-<body class="bg-white text-black">
+<body class="bg-white text-gray-800">
   <nav class="bg-blue-900 text-white p-4">
     <ul class="flex gap-6 justify-center">
       <li><a href="index.html" class="hover:underline">Home</a></li>
@@ -16,40 +22,73 @@
       <li><a href="projects.html" class="hover:underline">Projects</a></li>
     </ul>
   </nav>
+
   <main class="max-w-6xl mx-auto p-6">
-    <h1 class="text-4xl font-bold text-blue-700 mb-6">Projects</h1>
+    <h1 class="text-3xl font-bold text-blue-700 mb-6">Projects</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <!-- Project Card Example -->
-      <div class="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
-        <img src="https://via.placeholder.com/400x200" alt="Project 1" class="w-full h-48 object-cover">
+
+     
+      <!-- Project 1 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj1')">
+        <img src="images/project1.jpg" alt="Project 1" class="rounded-t-lg w-full h-48 object-cover" />
         <div class="p-4">
-          <h2 class="text-xl font-semibold">Project 1</h2>
-          <p class="text-sm text-gray-600">Short description of project 1.</p>
-          <button onclick="toggleModal('modal1')" class="mt-2 text-blue-600 hover:underline">Learn more</button>
+          <h2 class="font-semibold text-lg">Distributed Wastewater Surveillence Platform Leveraging Hybrid Microfluidic CMOS Biosensors</h2>
+        </div>
+        <div id="proj1" class="p-4 hidden">
+          <p>This project uses microfluidics to interface between luminescent synthetic microbial biosensors and low power photosensing electronics, providing a real time monitoring method for harmful substances in wastewater.</p>
         </div>
       </div>
       
-      <!-- Add more projects in the same format -->
-    </div>
-
-    <!-- Modal -->
-    <div id="modal1" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
-      <div class="bg-white rounded-lg max-w-lg p-6 relative">
-        <button onclick="toggleModal('modal1')" class="absolute top-2 right-2 text-gray-600 hover:text-black">&times;</button>
-        <h3 class="text-2xl font-bold mb-2">Project 1</h3>
-        <p class="text-gray-700 mb-4">Detailed explanation of Project 1 with technologies used, goals, outcomes, and optionally a link to the GitHub repo.</p>
-        <a href="#" class="text-blue-600 hover:underline">View on GitHub</a>
+      <!-- Project 1 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj1')">
+        <img src="images/project1.jpg" alt="Project 1" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">The Automated Plug & Playable Microfluidic System for Cell Communication</h2>
+        </div>
+        <div id="proj1" class="p-4 hidden">
+          <p>This project introduces a modular microfluidic system using 3D-printed components and an Arduino-controlled pump mechanism. It allows for precise liquid manipulation in low-resource settings.</p>
+        </div>
       </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj2')">
+        <img src="images/project2.jpg" alt="Project 2" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">GLM Boost for Innume Response Prediction</h2>
+        </div>
+        <div id="proj2" class="p-4 hidden">
+          <p>GLM Boost was used to predict immune response to vaccines from various clinical features.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj2')">
+        <img src="images/project2.jpg" alt="Project 2" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">CpG Island Classifier</h2>
+        </div>
+        <div id="proj2" class="p-4 hidden">
+          <p>A Python-based classification tool using Markov chains to identify CpG islands in genomic DNA, helping to predict regulatory regions involved in gene expression and disease risk.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj2')">
+        <img src="images/project2.jpg" alt="Project 2" class="rounded-t-lg w-full h-48 object-cover" />
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">Bayesian Networking for Breast Cancer Survival Predictability</h2>
+        </div>
+        <div id="proj2" class="p-4 hidden">
+          <p>A Python-based bayesian inference tool used clinical gene mutation data to predict breast cancer survivability.</p>
+        </div>
+      </div>
+
     </div>
   </main>
 
-  <script>
-    function toggleModal(id) {
-      const modal = document.getElementById(id);
-      modal.classList.toggle('hidden');
-      modal.classList.toggle('flex');
-    }
-  </script>
+  <footer class="bg-blue-900 text-white text-sm p-4 text-center mt-10">
+    <p>© 2025 Kara Walp. All rights reserved.</p>
+    <p>Contact: <a href="mailto:20walpk@gmail.com" class="underline">20walpk@gmail.com</a></p>
+  </footer>
 </body>
 </html>
-
