@@ -6,9 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Your Name</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body.custom-bg {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <nav class="bg-blue-900 text-white p-4">
+<body class="custom-bg text-gray-800">
+  <nav class="bg-blue-900 bg-opacity-80 text-white p-4">
     <ul class="flex gap-6 justify-center">
       <li><a href="index.html" class="hover:underline">Home</a></li>
       <li><a href="about.html" class="hover:underline">About Me</a></li>
@@ -16,9 +23,13 @@
       <li><a href="projects.html" class="hover:underline">Projects</a></li>
     </ul>
   </nav>
-  <main class="max-w-3xl mx-auto p-6">
+  <main class="max-w-3xl mx-auto p-6 bg-white bg-opacity-90 rounded-lg mt-10 shadow-lg">
     <h1 class="text-4xl font-bold text-blue-700 mb-4">Welcome to My Portfolio</h1>
     <p class="text-lg">Hi! I'm [Your Name], and this is my professional portfolio. Please explore my background, experience, and projects!</p>
   </main>
+  <footer class="bg-blue-900 text-white text-sm p-4 text-center mt-10">
+    <p>© 2025 Your Name. All rights reserved.</p>
+    <p>Contact: <a href="mailto:youremail@example.com" class="underline">youremail@example.com</a></p>
+  </footer>
 </body>
 </html>
