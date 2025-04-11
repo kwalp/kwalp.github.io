@@ -1,0 +1,285 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Kara Walp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+  <nav class="bg-blue-900 text-white p-4">
+    <ul class="flex gap-6 justify-center">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="about.html" class="hover:underline">About Me</a></li>
+      <li><a href="education.html" class="hover:underline">Education & Experience</a></li>
+      <li><a href="projects.html" class="hover:underline">Projects</a></li>
+    </ul>
+  </nav>
+
+  <main class="max-w-6xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-blue-700 mb-6">Projects</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- Project 1 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj1')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/sd1.jpg" class="absolute w-full h-full object-cover slider proj1-slider" />
+    <img src="images/sd2.jpg" class="absolute w-full h-full object-cover slider proj1-slider hidden" />
+    <img src="images/sd3.jpg" class="absolute w-full h-full object-cover slider proj1-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">Distributed Wastewater Surveillance Platform Leveraging Hybrid Microfluidic CMOS Biosensors</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2024 - 2025</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Microfluidics</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Synthetic Biology</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">CMOS Electronics</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Cell Culture</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">PCB Design</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/src-logo.png" alt="SRC" class="h-6" />
+            <img src="logos/intel-logo.png" alt="Intel" class="h-6" />
+            <img src="logos/wise-logo.png" alt="WISE Lab" class="h-6" />
+            <img src="logos/cidar-logo.png" alt="CIDAR Lab" class="h-6" />
+            <img src="logos/elmig-logo.png" alt="El Microbial Interation Group" class="h-6" />
+          </div>
+        </div>
+        <div id="proj1" class="p-4 hidden">
+          <p>This project uses microfluidics to interface between luminescent synthetic microbial biosensors and low power photosensing electronics, providing a real time monitoring method for harmful substances in wastewater.</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj2')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/apus1.jpg" class="absolute w-full h-full object-cover slider proj2-slider" />
+    <img src="images/apus2.jpg" class="absolute w-full h-full object-cover slider proj2-slider hidden" />
+    <img src="images/apus3.jpg" class="absolute w-full h-full object-cover slider proj2-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">The Automated Plug & Playable Microfluidic System for Cell Communication</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2023</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">3D Printing</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Arduino</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Mirofluidics</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Cell Culture</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/apus-logo.png" alt="APUS" class="h-6" />
+            <img src="logos/igem-logo.png" alt="iGEM" class="h-6" />
+            <img src="logos/oliveira-logo.png" alt="Oliveira Lab" class="h-6" />
+            <img src="logos/stempathways-logo.png" alt="STEM Pathways" class="h-6" />
+            <img src="logos/bdc-logo.png" alt="Biological Design Center" class="h-6" />
+          </div>
+        </div>
+        <div id="proj2" class="p-4 hidden">
+          <p>This project introduces a modular microfluidic system using 3D-printed components and an Arduino-controlled pump mechanism. It allows for precise liquid manipulation in low-resource settings.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj3')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/glm_immune1.jpg" class="absolute w-full h-full object-cover slider proj3-slider" />
+    <img src="images/glm_immune2.jpg" class="absolute w-full h-full object-cover slider proj3-slider hidden" />
+    <img src="images/glm_immune3.jpg" class="absolute w-full h-full object-cover slider proj3-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">GLM Boost for Immune Response Prediction</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2024</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Machine Learning</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">GLM Boost</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Immunology</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/bueng-logo.png" alt="Boston University Engineering" class="h-6" />
+          </div>
+        </div>
+        <div id="proj3" class="p-4 hidden">
+          <p>GLM Boost was used to predict immune response to vaccines from various clinical features.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj4')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/cpg1.jpg" class="absolute w-full h-full object-cover slider proj4-slider" />
+    <img src="images/cpg2.jpg" class="absolute w-full h-full object-cover slider proj4-slider hidden" />
+    <img src="images/cpg3.jpg" class="absolute w-full h-full object-cover slider proj4-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">CpG Island Classifier</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2024</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Python</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Bioinformatics</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Markov Models</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/bueng-logo.png" alt="Boston University Engineering" class="h-6" />
+          </div>
+        </div>
+        <div id="proj4" class="p-4 hidden">
+          <p>A Python-based classification tool using Markov chains to identify CpG islands in genomic DNA, helping to predict regulatory regions involved in gene expression and disease risk.</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj5')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/bayesian_breastcancer1.jpg" class="absolute w-full h-full object-cover slider proj5-slider" />
+    <img src="images/bayesian_breastcancer2.jpg" class="absolute w-full h-full object-cover slider proj5-slider hidden" />
+    <img src="images/bayesian_breastcancer3.jpg" class="absolute w-full h-full object-cover slider proj5-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">Bayesian Networking for Breast Cancer Survival Predictability</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2024</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Bayesian Networks</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Survival Analysis</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Genomics</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/bueng-logo.png" alt="Boston University Engineering" class="h-6" />
+          </div>
+        </div>
+        <div id="proj5" class="p-4 hidden">
+          <p>A Python-based bayesian inference tool used clinical gene mutation data to predict breast cancer survivability.</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj6')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/sassays1.jpg" class="absolute w-full h-full object-cover slider proj6-slider" />
+    <img src="images/sassays2.jpg" class="absolute w-full h-full object-cover slider proj6-slider hidden" />
+    <img src="images/sassays3.jpg" class="absolute w-full h-full object-cover slider proj6-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">Lateral Flow Assay for Drug-Facilitated Sexual Assault Prevention</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2022 - 2023</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Nanotechnology</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Chemical Sensing</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Lateral Flow Assay</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/bueng-logo.png" alt="Boston University Engineering" class="h-6" />
+            <img src="logos/btec-logo.png" alt="BTEC" class="h-6" />
+            <img src="logos/bmes-logo.png" alt="BMES" class="h-6" />
+          </div>
+        </div>
+        <div id="proj6" class="p-4 hidden">
+          <p>We designed and prototyped a portable test for gamma hydroxybutyric acid (GHB) in beverages, which is one of the most common drugs used in drug-facilitated sexual assault. The mechanism leveraged bifunctionalized silver nanoparticles and gave a colorimetric result.</p>
+          <p>Recognition: This project won first place in the Molecular & Tissue Engineering and Drug Discovery category of the first annual BTEC x BMES Design-a-thon, which aims to address health disparities.</p>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj7')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/writealight1.jpg" class="absolute w-full h-full object-cover slider proj7-slider" />
+    <img src="images/writealight2.jpg" class="absolute w-full h-full object-cover slider proj7-slider hidden" />
+    <img src="images/writealight3.jpg" class="absolute w-full h-full object-cover slider proj7-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">Write-a-Light: an Electronic Version of the Etch-a-Sketch</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2022 - 2023</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Electronics</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Arduino</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">C++</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/bueng-logo.png" alt="Boston University Engineering" class="h-6" />
+            <img src="logos/silab-logo.png" alt="SILab" class="h-6" />
+            <img src="logos/lutron-logo.png" alt="Lutron" class="h-6" />
+          </div>
+        </div>
+        <div id="proj7" class="p-4 hidden">
+          <p>We designed and prototyped an electronic version of the toy "Etch-a-Sketch" using an LED matrix, rotary encoders, and arduino.</p>
+          <p>Recognition: This project won first place in the 2022 Lutron Lighting and Innovation Competition hosted by BU's SI Lab.</p>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="bg-gray-100 rounded-lg shadow hover:shadow-lg cursor-pointer" onclick="toggleDetails('proj8')">
+        
+  <div class="relative w-full h-48 overflow-hidden rounded-t-lg">
+    <img src="images/fpgatennis1.jpg" class="absolute w-full h-full object-cover slider proj8-slider" />
+    <img src="images/fpgatennis2.jpg" class="absolute w-full h-full object-cover slider proj8-slider hidden" />
+    <img src="images/fpgatennis3.jpg" class="absolute w-full h-full object-cover slider proj8-slider hidden" />
+  </div>
+        <div class="p-4">
+          <h2 class="font-semibold text-lg">FPGA Tennis</h2>
+          <p class="text-sm text-gray-600 mt-1"></strong>2022 - 2023</p>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Verilog</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">FPGAs</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Digital Circuit Design</span>
+            <span class="bg-blue-200 text-blue-800 text-xs font-medium px-2 py-1 rounded-full">Logic Design</span>
+          </div>
+          <div class="flex items-center mt-2 space-x-2">
+            <img src="logos/bueng-logo.png" alt="Boston University Engineering" class="h-6" />
+          </div>
+        </div>
+        <div id="proj7" class="p-4 hidden">
+          <p>We designed and implemented a tennis game in an FPGA utilizing verilog via XILLINX Vivado.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-blue-900 text-white text-sm p-4 text-left mt-10">
+    <p>© 2025 Kara Walp. All rights reserved.</p>
+    <p>Contact: <a href="mailto:20walpk@gmail.com" class="underline">20walpk@gmail.com</a></p>
+  </footer>
+
+<script>
+  function cycleImages(className) {
+    const slides = document.querySelectorAll(`.${className}`);
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.add("hidden");
+      index = (index + 1) % slides.length;
+      slides[index].classList.remove("hidden");
+    }, 3000); // Change image every 3 seconds
+  }
+
+  function toggleDetails(id, className) {
+    const el = document.getElementById(id);
+    el.classList.toggle('hidden');
+  }
+
+  window.onload = () => {
+    cycleImages('proj1-slider');
+    cycleImages('proj2-slider');
+    cycleImages('proj3-slider');
+    cycleImages('proj4-slider');
+    cycleImages('proj5-slider');
+    cycleImages('proj6-slider');
+    cycleImages('proj7-slider');
+    cycleImages('proj8-slider');
+  };
+</script>
+
+</body>
+</html>
