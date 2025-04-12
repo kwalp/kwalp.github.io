@@ -57,7 +57,33 @@
       </div>
     </div>
 
-    <!-- Expertise Section -->
+    <!-- Awards Carousel Section -->
+<section class="mt-10 fade-in">
+  <h2 class="text-2xl font-semibold text-blue-700 mb-4">Recognition</h2>
+  <div class="relative overflow-hidden">
+    <div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+      <a href="https://example.com/award1" target="_blank" class="min-w-full flex-shrink-0 p-4">
+        <img src="images/igemaward.png" alt="iGEM" class="mx-auto h-32 object-contain rounded-lg shadow-md floaty">
+      </a>
+      <a href="https://example.com/award2" target="_blank" class="min-w-full flex-shrink-0 p-4">
+        <img src="images/designathonaward.png" alt="Design-a-thon" class="mx-auto h-32 object-contain rounded-lg shadow-md floaty">
+      </a>
+      <a href="https://example.com/award3" target="_blank" class="min-w-full flex-shrink-0 p-4">
+        <img src="images/lutronaward.png" alt="Lutron" class="mx-auto h-32 object-contain rounded-lg shadow-md floaty">
+      </a>
+    </div>
+  </div>
+  <script>
+    let carousel = document.getElementById('carousel');
+    let offset = 0;
+    setInterval(() => {
+      offset = (offset + 1) % carousel.children.length;
+      carousel.style.transform = `translateX(-${offset * 100}%)`;
+    }, 4000);
+  </script>
+</section>
+
+<!-- Expertise Section -->
     <section class="mt-10 fade-in">
       <h2 class="text-2xl font-semibold text-blue-700 mb-4">My Expertise</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-center">
