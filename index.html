@@ -23,6 +23,13 @@
       opacity: 0;
       animation: fadeIn ease 1.2s forwards;
     }
+    img.skill-logo {
+      max-height: 48px;
+      max-width: 100%;
+      height: auto;
+      width: auto;
+      object-fit: contain;
+    }
     @keyframes fadeIn {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -66,26 +73,49 @@
     <!-- Skills Logos Section -->
     <section class="mt-10 fade-in">
       <h2 class="text-2xl font-semibold text-blue-700 mb-4">Technical Skills</h2>
-      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 items-center justify-center">
-        <img src="logos/python-logo.png" alt="Python" class="h-12 mx-auto floaty">
-        <img src="logos/numpy-logo.png" alt="NumPy" class="h-12 mx-auto floaty">
-        <img src="logos/matplotlib-logo.png" alt="MatPlotLib" class="h-12 mx-auto floaty">
-        <img src="logos/scikit-logo.png" alt="scikit-learn" class="h-12 mx-auto floaty">
-        <img src="logos/pytorch-logo.png" alt="PyTorch" class="h-12 mx-auto floaty">
-        <img src="logos/tensorflow-logo.png" alt="TensorFlow" class="h-12 mx-auto floaty">
-        <img src="logos/java-logo.png" alt="Java" class="h-12 mx-auto floaty">
-        <img src="logos/c++-logo.png" alt="C++" class="h-12 mx-auto floaty">
-        <img src="logos/matlab-logo.png" alt="MATLAB" class="h-12 mx-auto floaty">
-        <img src="logos/html-logo.png" alt="HTML" class="h-12 mx-auto floaty">
-        <img src="logos/arduino-logo.png" alt="Arduino" class="h-12 mx-auto floaty">
-        <img src="logos/comsol-logo.png" alt="COMSOL" class="h-12 mx-auto floaty">
-        <img src="logos/onshape-logo.png" alt="Onshape" class="h-12 mx-auto floaty">
-        <img src="logos/fusion-logo.png" alt="Fusion360" class="h-12 mx-auto floaty">
-        <img src="logos/github-logo.png" alt="GitHub" class="h-12 mx-auto floaty">
-        <img src="logos/docker-logo.png" alt="Docker" class="h-12 mx-auto floaty">
-        <img src="logos/verilog-logo.png" alt="Verilog" class="h-12 mx-auto floaty">
-        <img src="logos/kicad-logo.png" alt="KiCad" class="h-12 mx-auto floaty">
-        <img src="logos/ltspice-logo.png" alt="LTspice" class="h-12 mx-auto floaty">
+
+      <!-- Programming Languages -->
+      <h3 class="text-xl font-semibold mt-6 mb-2">Languages</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
+        <img src="logos/python-logo.png" alt="Python" class="skill-logo mx-auto floaty">
+        <img src="logos/java-logo.png" alt="Java" class="skill-logo mx-auto floaty">
+        <img src="logos/c++-logo.png" alt="C++" class="skill-logo mx-auto floaty">
+        <img src="logos/html-logo.png" alt="HTML" class="skill-logo mx-auto floaty">
+        <img src="logos/matlab-logo.png" alt="MATLAB" class="skill-logo mx-auto floaty">
+      </div>
+
+      <!-- Libraries and Frameworks -->
+      <h3 class="text-xl font-semibold mt-6 mb-2">Libraries & Frameworks</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
+        <img src="logos/numpy-logo.png" alt="NumPy" class="skill-logo mx-auto floaty">
+        <img src="logos/matplotlib-logo.png" alt="MatPlotLib" class="skill-logo mx-auto floaty">
+        <img src="logos/scikit-logo.png" alt="Scikit-Learn" class="skill-logo mx-auto floaty">
+        <img src="logos/pytorch-logo.png" alt="PyTorch" class="skill-logo mx-auto floaty">
+        <img src="logos/tensorflow-logo.png" alt="TensorFlow" class="skill-logo mx-auto floaty">
+      </div>
+
+      <!-- Hardware & Electronics Design -->
+      <h3 class="text-xl font-semibold mt-6 mb-2">Hardware & Electronics</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
+        <img src="logos/arduino-logo.png" alt="Arduino" class="skill-logo mx-auto floaty">
+        <img src="logos/verilog-logo.png" alt="Verilog" class="skill-logo mx-auto floaty">
+        <img src="logos/kicad-logo.png" alt="KiCad" class="skill-logo mx-auto floaty">
+        <img src="logos/ltspice-logo.png" alt="LTspice" class="skill-logo mx-auto floaty">
+      </div>
+
+      <!-- CAD & Modeling -->
+      <h3 class="text-xl font-semibold mt-6 mb-2">CAD & Modeling</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
+        <img src="logos/onshape-logo.png" alt="Onshape" class="skill-logo mx-auto floaty">
+        <img src="logos/fusion-logo.png" alt="Fusion 360" class="skill-logo mx-auto floaty">
+        <img src="logos/comsol-logo.png" alt="COMSOL" class="skill-logo mx-auto floaty">
+      </div>
+
+      <!-- Deployment & DevOps -->
+      <h3 class="text-xl font-semibold mt-6 mb-2">Deployment & DevOps</h3>
+      <div class="grid grid-cols-3 sm:grid-cols-5 gap-4 items-center">
+        <img src="logos/github-logo.png" alt="GitHub" class="skill-logo mx-auto floaty">
+        <img src="logos/docker-logo.png" alt="Docker" class="skill-logo mx-auto floaty">
       </div>
     </section>
 
@@ -100,4 +130,3 @@
   </footer>
 </body>
 </html>
-
