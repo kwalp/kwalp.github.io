@@ -1,7 +1,7 @@
 .title-container h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 3vw; /* You can also use something fixed like 4em */
+  font-size: 4em; /* You can also use something fixed like 4em */
   text-transform: uppercase;
   color: transparent;
   background: radial-gradient(
