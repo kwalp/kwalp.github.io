@@ -1,0 +1,22 @@
+.title-container h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 6vw; /* You can also use something fixed like 4em */
+  text-transform: uppercase;
+  color: transparent;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  background-size: 200%;
+  animation: gradient-animation 1.7s linear infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+@keyframes gradient-animation {
+  to {
+    background-position: 200% center;
+  }
+}
